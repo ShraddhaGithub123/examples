@@ -26,6 +26,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: guestbook-go/
+          file: guestbook-go/Dockerfile
           push: true
           tags: shraddhagaikwad52/examples:latest
